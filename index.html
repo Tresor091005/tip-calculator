@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+
+  <div class="logo">
+    <img src="images/logo.svg" alt="logo splitter">
+  </div>
+
+  <section> 
+    <div class="first-part">
+      <div class="person">
+        <div class="input">
+          <h1>Bill</h1>
+          <input type="text" name="" class="nbBill" placeholder="0">
+          <img src="images/icon-dollar-2.svg" alt="logo d'un dollar" class="replace">
+        </div>
+  
+        <div class="personalTip">
+          <h1>Select Tip %</h1>
+          <div class="option">
+            <button id="btn5" class="">5%</button>
+            <button id="btn10" class="">10%</button>
+            <button id="btn15" class="">15%</button>
+            <button id="btn25" class="">25%</button>
+            <button id="btn50" class="">50%</button>
+            <button class="custom"><input type="text" placeholder="Custom"></button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="input">
+          <div class="optionalCase">
+            <h1>Number of People</h1>
+            <div class="warning invisible">Can't be zero</div>
+          </div>
+          <input type="text" name="" class="nbPeople" placeholder="0">
+          <img src="images/icon-person.svg" alt="logo d'une personne" class="replace">
+      </div>
+    </div>
+  
+    <div class="allResult">
+      <div class="twoSum">
+        <div class="sum">
+          <div class="title">
+            Tip Amount<br><span class="person">/ person</span>
+          </div>
+  
+          <div class="value">
+            <img src="images/icon-dollar.svg" alt="logo d'un dollar" class="dollar">
+            <div class="amount">0.00</div>
+          </div>
+        </div>
+  
+        <div class="sum">
+          <div class="title">
+            Total<br><span class="person">/ person</span>
+          </div>
+  
+          <div class="value">
+            <img src="images/icon-dollar.svg" alt="logo d'un dollar" class="dollar">
+            <div class="total">0.00</div>
+          </div>
+        </div>
+      </div>
+  
+      <button class="active reset disabled">RESET</button>
+    </div>
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="tresor091005.github.io">LAHAN Tresor</a>.
+  </div>
+  
+
+  <script src="scripts/config.js"></script>
+  <script src="scripts/functions.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
