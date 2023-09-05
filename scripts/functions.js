@@ -68,7 +68,7 @@ function show() {
             disableReset()
         } else {
             amount =  billValue * tip / nbPeople
-            total = (billValue / nbPeople) + amount
+            total = billValue * tip
 
             endVisible()
             tipAmount.textContent = arrondir2(amount)
